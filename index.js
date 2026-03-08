@@ -9,13 +9,13 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 
-// Conexión a PostgreSQL
+// Conexión a PostgreSQL usando variables de entorno de Render
 const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "qr_asist",
-  password: "2711", // 👈 pon tu contraseña real
-  port: 5432
+  user: process.env.DB_USER,       // antes: "postgres"
+  host: process.env.DB_HOST,       // antes: "localhost"
+  database: process.env.DB_NAME,   // antes: "qr_asist"
+  password: process.env.DB_PASSWORD, // antes: "2711"
+  port: process.env.DB_PORT        // antes: 5432
 });
 
 // ------------------ LOGIN ------------------
