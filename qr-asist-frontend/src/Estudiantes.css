@@ -1,0 +1,116 @@
+.estudiantes-container {
+  padding: 40px;
+  background: #f7f7f7;
+  min-height: 100vh;
+  text-align: center;
+  margin-top: 80px; /* 👈 baja el contenido para que no lo tape el Navbar */
+}
+
+/* Título del curso */
+.estudiantes-title {
+  color: #E30613;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Tabla de estudiantes */
+.estudiantes-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+/* Encabezado en rojo intenso */
+.estudiantes-table thead th {
+  background: #E30613;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Filas cuerpo en rojo claro */
+.estudiantes-table tbody td {
+  background: #f28b8b; /* rojo claro */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Hover fila completa */
+.estudiantes-table tbody tr:hover td {
+  background: #fff;
+  color: #000;
+}
+
+/* Celdas de asistencia */
+.asistencia-cell {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Presente: ✓ verde visual */
+.presente {
+  color: #0f0; /* verde brillante */
+  font-size: 24px;
+}
+
+/* Pendiente: reloj de arena */
+.pendiente {
+  color: #000;
+  font-size: 20px;
+}
+
+/* Botón editar/guardar */
+.edit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #E30613;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #fff;
+  color: #E30613;
+}
+
+/* Botón añadir estudiante */
+.add-btn {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #E30613;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #fff;
+  color: #E30613;
+}
+
+/* Inputs en modo edición */
+.estudiantes-table input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 90%;
+  text-align: center;
+}
